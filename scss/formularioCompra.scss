@@ -1,0 +1,25 @@
+$colorBlanco: rgb(255, 244, 239);
+$colorNegro: rgb(0, 0, 0);
+$colorPrincipal: rgb(230, 168, 139);
+$colorSecundario: rgb(56, 41, 31);
+
+html{
+    background-color: $colorBlanco;
+    body {
+        background-color: $colorBlanco;
+        .form {
+            margin-inline: 20%;
+            margin-top: 5%;
+            border-radius: 15px;
+            background-color: #fff;
+            padding: 3em;
+            display: flex;
+            flex-direction: row;
+            .btn {
+                margin-top: 2%;
+            }
+        }
+    } 
+        
+    
+}

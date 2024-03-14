@@ -1,0 +1,20 @@
+html {
+  background-color: rgb(255, 244, 239);
+}
+html body {
+  background-color: rgb(255, 244, 239);
+}
+html body .form {
+  margin-inline: 20%;
+  margin-top: 5%;
+  border-radius: 15px;
+  background-color: #fff;
+  padding: 3em;
+  display: flex;
+  flex-direction: row;
+}
+html body .form .btn {
+  margin-top: 2%;
+}
+
+/*# sourceMappingURL=formularioCompra.css.map */
