@@ -32,8 +32,18 @@ html main .form {
   justify-content: space-around;
   padding: 3%;
 }
+@media (max-width: 767px) {
+  html main .form {
+    flex-direction: column;
+  }
+}
 html main .form .form__img {
   width: 350px;
+}
+@media (max-width: 767px) {
+  html main .form .form__img {
+    width: 100%;
+  }
 }
 html main .form .info {
   display: flex;
@@ -50,6 +60,7 @@ html main .form .info .div__cantidad {
   flex-direction: row;
   justify-content: start;
   padding: 3%;
+  font-size: 80%;
 }
 html main .form .info .div__cantidad .info__label {
   font-size: 1.5em;

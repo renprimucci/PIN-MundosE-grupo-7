@@ -5,10 +5,26 @@ body {
   display: grid;
   grid-template-areas: "head head head head head" "aside main main main main" "footer footer footer footer footer";
 }
+@media (max-width: 768px) {
+  body {
+    grid-template-areas: "head" "aside" "main" "footer";
+  }
+}
 body header {
   grid-area: head;
   display: flex;
   flex-direction: column;
+  /*    @media (max-width: 768px) {
+          .header__nav {
+              flex-wrap: wrap;
+
+              .header__nav__item {
+                  flex: 1 0 auto;
+                  margin-bottom: 1em;
+              }
+          }
+      }
+  }*/
 }
 body header .header__nav {
   display: flex;
@@ -23,6 +39,12 @@ body header .header__nav .header__nav__item {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1em;
 }
+body header .header__nav {
+  flex-direction: row;
+}
+body header .header__nav .header__nav__item {
+  margin-bottom: 5px;
+}
 body aside {
   grid-area: aside;
   margin: 5%;
@@ -30,6 +52,8 @@ body aside {
   flex-direction: column;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: rgb(56, 41, 31);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(100%);
 }
 body aside .category {
   background-color: rgb(56, 41, 31);
@@ -50,6 +74,14 @@ body aside .category .category__Item {
 }
 body aside .category:hover {
   background-color: rgb(37, 28, 21);
+}
+@media (max-width: 768px) {
+  body aside {
+    transform: translateX(0);
+  }
+}
+body aside.active {
+  transform: translateX(100%);
 }
 body main {
   grid-area: main;
@@ -76,6 +108,11 @@ body main .container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   padding: 0 4em;
+}
+@media (max-width: 768px) {
+  body main .container {
+    grid-template-columns: 1fr;
+  }
 }
 body main .container .article {
   background-color: rgb(255, 244, 239);
@@ -127,6 +164,12 @@ body footer .redes-sociales {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 768px) {
+  body footer .redes-sociales {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }
 body footer .redes-sociales .copy {
   text-decoration: none;

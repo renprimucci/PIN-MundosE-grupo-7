@@ -17,45 +17,33 @@ html body .form .btn {
   margin-top: 2%;
 }
 
-/*# sourceMappingURL=formularioCompra.css.map */
-@media(max-width:480px){
-
-html body .form {
-      margin-inline: 8%;
-      margin-top: 5%;
-      border-radius: 10px;
-      #validationTooltip01{
-          font-size: 10px;
-      }
-      #validationTooltip02{
-        font-size: 10px;
-      }
-      #validationTooltip03{
-        font-size: 10px;
-      }
-      #validationTooltip04{
-        font-size: 10px;
-      }
-      #validationTooltip05{
-        font-size: 10px;}
-        #validationTooltip06{
-          font-size: 10px;
-        }
-        #validationTooltipEmail{
-          font-size: 10px;
-        }
-      }
-  form #formulario-tarjeta{
-    #inputNumero{
-    font-size: 10px;
-    #inputNombre{
-      font-size: 30px;
-    }
-    }
+@media (max-width: 767px) {
+  .form {
+    margin-inline: 5%;
+    margin-top: 3%;
+    border-radius: 8px;
   }
-  section #tarjeta{
-    width: 90px;
-    height: 50px;
-    
+  .form #validationTooltip01 {
+    font-size: 10px;
+  }
+  .form #validationTooltip02 {
+    font-size: 10px;
+  }
+  .form #validationTooltip03 {
+    font-size: 10px;
+  }
+  .form #validationTooltip04 {
+    font-size: 10px;
+  }
+  .form #validationTooltip05 {
+    font-size: 10px;
+  }
+  .form #validationTooltip06 {
+    font-size: 10px;
+  }
+  .form #validationTooltipEmail {
+    font-size: 10px;
   }
 }
+
+/*# sourceMappingURL=formularioCompra.css.map */

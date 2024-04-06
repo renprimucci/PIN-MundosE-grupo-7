@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/formularioCompra.scss"],"names":[],"mappings":"AAKA;EACI,kBANU;;AAOV;EACI,kBARM;;AASN;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACI","file":"formularioCompra.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/formularioCompra.scss"],"names":[],"mappings":"AAKA;EACI,kBANU;;AAOV;EACI,kBARM;;AASN;EACI;EACA;EACA;EACA;EACA;EACA;EACA;;AACA;EACI;;;AAOhB;EACA;IACQ;IACA;IACA;;EACA;IACI;;EAEJ;IACI;;EAEJ;IACI;;EAEJ;IACI;;EAEJ;IACI;;EACJ;IACI;;EAEJ;IACI","file":"formularioCompra.css"}
