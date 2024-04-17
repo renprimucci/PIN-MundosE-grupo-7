@@ -14,6 +14,18 @@ body header .header__nav {
   background-color: rgb(56, 41, 31);
   padding: 1em;
 }
+@media (max-width: 767) {
+  body header .header__nav body {
+    max-width: 767px;
+    height: auto;
+  }
+  body header .header__nav .header__nav {
+    flex-direction: column;
+  }
+  body header .header__nav .header__nav .header__nav__item {
+    margin-bottom: 5px;
+  }
+}
 body header .header__nav .header__nav__item {
   text-decoration: none;
   color: rgb(248, 227, 217);
@@ -25,24 +37,36 @@ body header .imagen-principal {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 body header .imagen-principal .fondo {
   width: 100%;
 }
 body header .imagen-principal .logo {
   position: absolute;
-  top: 27%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 130px;
+  width: 100px;
+}
+@media (max-width: 768px) {
+  body header .imagen-principal .logo {
+    width: 50px;
+  }
 }
 body header .imagen-principal .imagen-principal__titulo {
   position: absolute;
-  top: 40%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   font-size: 3em;
+}
+@media (max-width: 768px) {
+  body header .imagen-principal .imagen-principal__titulo {
+    top: 70%;
+    font-size: 1.5em;
+  }
 }
 body main {
   background-color: rgb(230, 168, 139);
@@ -76,18 +100,24 @@ body main .productos {
   place-content: center;
   background-color: rgb(230, 168, 139);
 }
+@media (max-width: 600px) {
+  body main .productos {
+    grid-template-columns: 1fr;
+  }
+}
 body main .productos article {
   background-color: rgb(230, 168, 139);
   align-items: center;
   margin: 10%;
   transition: all 0.5;
+  width: 80%;
 }
 body main .productos article .article__div {
   overflow: hidden;
 }
 body main .productos article .article__div .productos__img {
   width: 100%;
-  height: 100%;
+  height: auto;
   transition: all 0.5s;
   object-fit: cover;
 }
@@ -99,6 +129,7 @@ body main .productos article .productos__h3 {
   padding: 1em;
   border: solid 5px transparent;
   transition: all 0.5s;
+  max-width: 100%;
 }
 body main .productos article:hover .productos__img {
   transform: scale(1.2);
@@ -112,6 +143,11 @@ body main .recetas {
   grid-template-columns: 1fr 1fr 1fr;
   place-content: center;
   background-color: rgb(230, 168, 139);
+}
+@media (max-width: 768px) {
+  body main .recetas {
+    grid-template-columns: 1fr;
+  }
 }
 body main .recetas article {
   background-color: rgb(230, 168, 139);
@@ -145,10 +181,16 @@ body main .recetas article:hover .recetas__h3 {
   border-bottom: solid 5px rgb(248, 227, 217);
 }
 body main .video {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   background-color: rgb(0, 0, 0);
+}
+@media (max-width: 768px) {
+  body main .video {
+    flex-direction: column;
+  }
 }
 body main .video .video__video {
   padding-left: 5%;
@@ -171,6 +213,13 @@ body footer .redes-sociales {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (max-width: 768px) {
+  body footer .redes-sociales {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 body footer .redes-sociales .copy {
   text-decoration: none;
